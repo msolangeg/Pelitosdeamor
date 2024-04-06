@@ -10,14 +10,7 @@
     padding: 0px !important;
   }
   
-  /* header {
-    object-fit: contain;
-    width: 100%;
-    background-image: url(wave2.svg);
-    background-repeat: no-repeat;
-    color: #fff;
-    text-align: center;
-  } */
+ 
 .header {
   height: 100px;
   /* overflow: hidden; */
