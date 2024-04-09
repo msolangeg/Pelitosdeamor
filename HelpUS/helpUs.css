@@ -169,17 +169,17 @@ body {
   }
 
   .navConainerFooter{
-   color: #081721;
    margin: 0;
    display: flex;
 
   }
   .nameFooter{
     margin-top: 20px;
-    color: #081721;
+    color: #26547C;
     font-family:"Heebo";
     font-weight: 900;
     text-align: center;
+    font-size:x-large;
   }
 
   .navIcon{
@@ -188,8 +188,8 @@ body {
 
   .navFooter{
     display: flex;
-    margin: 0px 10px 20px 10px;
-    color: #081721;
+    margin: 5px 10px 20px 10px;
+    color: #26547C;
     font-family:"Heebo";
     text-decoration: none;
     font-weight: 600;
@@ -200,7 +200,7 @@ body {
  .infoFooter{
    color: #081721;
    font-family:"Heebo";
-   font-weight: 400;
+   font-weight: 500;
    text-align: center;
    font-size: small;
    background-color: #dbb253;
