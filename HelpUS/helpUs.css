@@ -30,13 +30,15 @@ body {
     z-index: 0;
     padding: 0;
     margin: 0;
+    height: 250px;
+    object-fit: cover;
   }
   
   header h1 {
     z-index:1;
     position: relative;
-    font-size: 3em;
-    padding-top: 50px;
+    font-size: 2em;
+    padding-top: 20px;
     margin-top: 0;
     color: #26547C;
     font-family:"Heebo", sans-serif;
@@ -150,23 +152,65 @@ body {
     }
   
 .footer {
-  background-color:transparent;
-  color: #d95050;
-  text-align: center;
-  /* position: fixed; */
+  background-color:#ffd166;
   position: relative;
-  margin-bottom: 0px
+  margin-bottom: 0px;
+  height: 180px;
+  width: 100%;
+  align-content: center;
   }
-  .infoFooter{
-    margin: 0;
-    background-color: #ffd166;
-    height: 100px;
-    color: #f8f8f8;
-    position: relative;
-    font-family:"Heebo"
+  .containerFooter{
+    background-color:#ffd166;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
   }
 
- 
+  .navConainerFooter{
+   color: #081721;
+   margin: 0;
+   display: flex;
+
+  }
+  .nameFooter{
+    margin-top: 20px;
+    color: #081721;
+    font-family:"Heebo";
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .navIcon{
+    margin: 0;
+  }
+
+  .navFooter{
+    display: flex;
+    margin: 0px 10px 20px 10px;
+    color: #081721;
+    font-family:"Heebo";
+    text-decoration: none;
+    font-weight: 600;
+    gap: 40px;
+
+  }
+
+ .infoFooter{
+   color: #081721;
+   font-family:"Heebo";
+   font-weight: 400;
+   text-align: center;
+   font-size: small;
+   background-color: #dbb253;
+ }
+
+ .infoFooter p{
+  margin-bottom: 0px;
+ }
+
+
 
   /* Animaciones de scroll
 
