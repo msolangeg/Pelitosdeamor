@@ -67,6 +67,12 @@ body {
     color: #EF476F;
     font-weight: 600;
   }
+
+  .logo{
+    margin: 20px 40px;
+    height: 40px;
+    width: 40px;
+  }
   
 .sectionContainer{
     display: flex;
