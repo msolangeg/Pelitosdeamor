@@ -165,6 +165,7 @@ body {
   width: 100%;
   align-content: center;
   }
+
   .containerFooter{
     background-color:#ffd166;
     display: flex;
@@ -172,6 +173,7 @@ body {
     flex-direction: column;
     text-align: center;
     align-content: center;
+    width: 100%;
   }
 
   .navConainerFooter{
@@ -217,6 +219,124 @@ body {
  }
 
 
+ @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+ }
+
+ /* Ajustes para dispositivos móviles */
+
+ @media (max-width: 767px) {
+
+  
+
+  .header {
+    display: none;
+  }
+  .section{
+    height:100vh;
+  }
+
+   .sectionContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    margin: 30px 0 0 0;
+    height: 00%;
+   }
+
+   section h2 {
+    font-size: 1rem;
+    font-family: "Coming Soon";
+    font-weight: 900;
+    font-style: normal;
+    color: #081721;
+  }
+
+  section h3 {
+    font-size: 0.8em;
+  }
+
+  section p{
+    font-size: .8rem;
+    color: #081721;
+  }
+
+  section img {
+    object-fit: content;
+    height:200px;
+    width: 200px;
+    z-index: 0;
+  }
+  .imagen{
+    margin:0px
+  }
+   
+  .leftContainerAyuda > button {
+    width: 100%;
+  }
+
+  .navConainerFooter{
+   width: 70%;
+
+  }
+  .nameFooter{
+    font-size: 1rem;;
+  
+  }
+
+  .navFooter{
+    font-size: 12px;
+
+  }
+
+ .infoFooter{
+  font-size: 10px;
+  margin-bottom: 0px;
+ }
+}
+
+/* Ajustes para dispositivos tipo tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  
+
+  .header {
+    height: 200px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .section {
+    padding-top: 70px;
+  }
+
+  section h2 {
+    font-size: 1.4em;
+  }
+
+  section h3 {
+    font-size: 1em;
+  }
+
+
+  .sectionContent{
+    display: flex;
+    flex-direction: column;
+   }
+
+  .leftContainerAyuda > button {
+    width: 90%;
+  }
+
+  .footer {
+    height: 150px;
+  }
+
+}
 
   /* Animaciones de scroll
 
