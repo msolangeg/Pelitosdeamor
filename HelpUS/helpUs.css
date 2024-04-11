@@ -108,7 +108,7 @@ body {
   gap: 70px;
   position: absolute;
   width: 80%;
-  height: 100vh;
+  height:100vh;
 }
   
   section h2{
@@ -232,18 +232,23 @@ body {
   .header {
     display: none;
   }
-  .section{
-    height:100vh;
-  }
+  /* .section{
+    border: 1px solid red
 
+  } */
+
+  .containerImage{
+    object-fit: cover;
+    height: 200px;
+  }
    .sectionContent{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:10px;
     margin: 30px 0 0 0;
-    height: 00%;
    }
+
 
    section h2 {
     font-size: 1rem;
@@ -261,6 +266,13 @@ body {
     font-size: .8rem;
     color: #081721;
   }
+ /* .containerImage{
+    object-fit: content;
+    height:200px;
+    width: 200px;
+    z-index: 0;
+    margin:0px
+ } */
 
   section img {
     object-fit: content;
@@ -274,6 +286,9 @@ body {
    
   .leftContainerAyuda > button {
     width: 100%;
+  }
+  .rightContainerAyuda{
+    height: auto;
   }
 
   .navConainerFooter{
@@ -322,11 +337,29 @@ body {
     font-size: 1em;
   }
 
+  .section{
+
+  }
+
+  /* .sectionContainer{
+   margin-top:  100px;
+  } */
 
   .sectionContent{
+
     display: flex;
     flex-direction: column;
    }
+
+   section img {
+    object-fit: content;
+    height: 300px;
+    width: 300px;
+    z-index: 0;
+  }
+  .imagen{
+    margin:0px
+  }
 
   .leftContainerAyuda > button {
     width: 90%;
