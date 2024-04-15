@@ -1,6 +1,202 @@
 /* testimonials */
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+body {
+
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Color de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen de fondo */
+    background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza la página */
+    
+}
+header{
+    width:100%;
+    top: 0px !important;    
+    position: fixed;
+   
+}
+
+header.logoWaveContainer{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+    header img{
+        position:absolute;
+        width: 100%;
+        height: 220px;
+        margin-top: 0px;
+        padding: 0px;
+        z-index: 0;
+        object-fit: cover;
+    }
 
 
+    img.logo{
+        margin: 10px 10%;
+        width: 50px;
+        height: 50px;
+        z-index:1;
+    }
+
+    header h1 {
+        position: relative;
+        margin-top: 0;
+        padding-top: 20px;
+        z-index:1;
+        font-size: 2em;
+        color: #26547C;
+        font-family: "Inter", sans-serif;
+        font-weight: 900;
+        text-align: center;
+    }
+  
+header nav {
+    z-index:1;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    
+}
+      
+    header nav a {
+        color: #26547C;
+        margin: 0 10px;
+        text-decoration: none; 
+    }
+    
+    header nav a:hover{
+        padding:6px;
+        border-radius: 20px;
+        transition:all .5s ease-in-out;
+        background-color: #06D6A0;
+        color:#FFD166;
+        font-weight: 500;
+    }
+
+.contenedor-principal {
+    display: grid;
+    text-align: center; /* Centra el contenido del contenedor */
+}
+
+h1 {
+    margin-bottom: 90px; /* Espacio después del título */
+    color: #080808; /* Color de la letra */
+}
+
+.contenedor-testimonios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+    gap: 50px; /* Espacio entre testimonios */
+}
+
+.imagen-testimonio {
+    max-width: 100%; /* Ancho máximo para la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+.texto-testimonio {
+    margin: 10px 0; /* Márgenes en la parte superior e inferior del texto */
+}
+
+.contenedor {
+    display: flex;
+    padding: 90px;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre elementos */
+}
+
+.imagen {
+    max-width: 320px;
+    text-align: center;
+    float: none; /* Flotar a la izquierda */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    border-radius: 10px;
+    height: auto;
+    margin: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    display: grid;
+    margin: 20px; /* Márgenes predeterminados del párrafo */
+    padding: 10px; /* Espaciado dentro del párrafo */
+    background-color: #f8f3f3; /* Color de fondo para el texto */
+    border-radius: 5px;
+    height: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    text-align: center;
+    margin: 20px;
+}
+footer{
+    width: 100%;
+    height: 170px;
+    margin-top: 40px;
+    background-color: #FFD166;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+ .containerFooter p{
+    margin: 0px !important; 
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    font-size:x-large;
+    font-weight: 800;
+    color: #26547C;
+    
+ }
+
+ .navConainerFooter{
+    margin: 5px 10px 5px 10px;
+ }
+
+ .navConainerFooter a{
+    margin: 0px !important;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #26547C;
+ }
+ .navConainerFooter a:hover{
+    font-weight: 700;
+ }
+
+ .infoFooter p{
+    margin: 0px !important;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #26547C;
+ }
  /* -- ENCABEZADO HEADER -- */
 
  header{
@@ -73,50 +269,48 @@ header nav {
         font-weight: 500;
     }
 
+     /* -- FOOTER -- */
 
-    
-/* -- FOOTER -- */
+    footer{
+        width: 100%;
+        height: 170px;
+        background-color: #FFD166;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+     .containerFooter p{
+        margin: 0px !important; 
+        padding: 20px;
+        font-family: "Inter", sans-serif;
+        font-size:x-large;
+        font-weight: 800;
+        color: #26547C;
+        
+     }
 
-footer{
-    width: 100%;
-    height: 170px;
-    background-color: #FFD166;
-    background-repeat: no-repeat;
-    text-align: center;
-}
- .containerFooter p{
-    margin: 0px !important; 
-    padding: 20px;
-    font-family: "Inter", sans-serif;
-    font-size:x-large;
-    font-weight: 800;
-    color: #26547C;
-    
- }
+     .navConainerFooter{
+        margin: 5px 10px 5px 10px;
+     }
 
- .navConainerFooter{
-    margin: 5px 10px 5px 10px;
- }
+     .navConainerFooter a{
+        margin: 0px !important;
+        padding-bottom: 10px;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #26547C;
+     }
+     .navConainerFooter a:hover{
+        font-weight: 700;
+     }
 
- .navConainerFooter a{
-    margin: 0px !important;
-    padding-bottom: 10px;
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #26547C;
- }
- .navConainerFooter a:hover{
-    font-weight: 700;
- }
-
- .infoFooter p{
-    margin: 0px !important;
-    padding: 10px;
-    font-family: "Inter", sans-serif;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #26547C;
- }
+     .infoFooter p{
+        margin: 0px !important;
+        padding: 10px;
+        font-family: "Inter", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #26547C;
+     }
 
