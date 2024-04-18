@@ -1,0 +1,310 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: #f8f8f8 !important;
+    font-family: "Inter", sans-serif;
+  }
+
+  /* -- ENCABEZADO HEADER -- */
+
+    header{
+        width:100%;
+        top: 0px !important;    
+        position: fixed;
+       
+    }
+
+    header.logoWaveContainer{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        header img{
+            position:absolute;
+            width: 100%;
+            height: 220px;
+            margin-top: 0px;
+            padding: 0px;
+            z-index: 0;
+            object-fit: cover;
+        }
+
+
+        img.logo{
+            margin: 10px 10%;
+            width: 50px;
+            height: 50px;
+            z-index:1;
+        }
+
+        header h1 {
+            position: relative;
+            margin-top: 0;
+            padding-top: 20px;
+            z-index:1;
+            font-size: 2em;
+            color: #26547C;
+            font-family: "Inter", sans-serif;
+            font-weight: 900;
+            text-align: center;
+        }
+      
+    header nav {
+        z-index:1;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        
+    }
+          
+        header nav a {
+            color: #26547C;
+            margin: 0 10px;
+            text-decoration: none; 
+        }
+        
+        header nav a:hover{
+            padding:6px;
+            border-radius: 20px;
+            transition:all .5s ease-in-out;
+            background-color: #06D6A0;
+            color:#FFD166;
+            font-weight: 500;
+        }
+
+  
+
+/* -- SECCIONES MAIN -- */
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;        
+    }
+
+    section{
+        display: flex;
+        gap:70px;
+        padding-top: 220px;
+        width: 80%;
+    }
+
+    .leftContainerAyuda>button{
+        border: none;
+        border-radius: 20px;
+        *background-color: #26547C;
+        color: #f8f8f8;
+        padding: 8px;
+        cursor: pointer;
+        margin-top: 2rem;
+        width: 300px;
+      }
+        .leftContainerAyuda>button:hover{
+          *background-color: #232147;
+          
+        }
+
+
+        .leftContainerAyuda h2,h3,button{
+            animation: pAnim 2s ease 0s 1 normal none;
+            font-family: "Inter", sans-serif;
+        }
+
+        .leftContainerAyuda>p{
+            color:#081721;
+            animation: pAnim 2s ease 0s 1 normal none;
+            font-family: "Inter", sans-serif;
+        }
+
+        @keyframes pAnim {
+            0% {
+            opacity: 0;
+            transform: translateX(-50px);
+            }
+    
+            100% {
+            opacity: 1;
+            transform: translateX(0);
+            }
+    }
+    
+
+
+    .containerImage>img{
+        width: 500px;
+        height: 500px;
+        animation: imgAnim 2s ease 0s 1 normal none;
+    }
+        @keyframes imgAnim {
+            0% {
+            opacity: 0;
+            transform: translateX(50px);
+            }
+    
+            100% {
+            opacity: 1;
+            transform: translateX(0);
+            }
+    }
+
+   /* -- FOOTER -- */
+
+    footer{
+        width: 100%;
+        height: 170px;
+        margin-top: 40px;
+        background-color: #FFD166;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+     .containerFooter p{
+        margin: 0px !important; 
+        padding: 20px;
+        font-family: "Inter", sans-serif;
+        font-size:x-large;
+        font-weight: 800;
+        color: #26547C;
+        
+     }
+
+     .navConainerFooter{
+        margin: 5px 10px 5px 10px;
+     }
+
+     .navConainerFooter a{
+        margin: 0px !important;
+        padding-bottom: 10px;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #26547C;
+     }
+     .navConainerFooter a:hover{
+        font-weight: 700;
+     }
+
+     .infoFooter p{
+        margin: 0px !important;
+        padding: 10px;
+        font-family: "Inter", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #26547C;
+     }
+
+
+     
+    /* -- RESPONSIVE MOBILE -- */
+
+    @media (max-width: 545px) {
+
+        header{
+            display: none;
+        }
+
+
+        section{
+            flex-direction: column;
+            padding-top: 50px;
+        }
+
+        section p{
+            font-size: .8rem;  
+            color: #081721;
+          }
+
+        .containerImage{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            
+        }
+
+        .leftContainerAyuda h2,h3,button{
+            opacity: 0;
+            animation: pAnim 2s ease forwards;
+            }
+
+            .leftContainerAyua>p{
+                opacity: 0;
+                animation: pAnim 2s ease forwards;
+                }
+
+            @keyframes pAnim {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+            
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+
+            .containerImage>img{
+                width: 250px;
+                height: 250px;
+                
+                opacity: 0;
+                animation: imgAnim 2s ease forwards;
+            }
+            @keyframes imgAnim {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+            
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+ 
+            
+        }
+        
+        /* -- RESPONSIVE TABLET -- */
+
+ @media (min-width: 768px) and (max-width: 1024px) {
+
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    header nav {
+        font-size: 0.8rem;
+    }
+    
+    section{
+        padding-top: 130px;
+        gap:12px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        
+    }
+
+    .leftContainerAyuda p,h2,h3{
+        font-size: 14px;
+    }
+    
+    
+    .containerImage>img{
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+    }
+ }
