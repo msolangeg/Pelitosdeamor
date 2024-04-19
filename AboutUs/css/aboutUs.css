@@ -1,0 +1,329 @@
+:root {
+  --azul: #26547C;
+  --rosado: #EF476F;
+  --background: #f8f8f8;
+  --amarillo: #ffd166;
+  --oscuro: #081721;
+  --verde: #06d6a0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .cursor {
+  position: fixed;
+  width: 50px; 
+  height: 50px;
+  pointer-events: none; 
+  z-index: 9999; 
+  background-image: url('../img/huella.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%); 
+  transition: transform 0.1s ease; 
+} */
+
+body {
+  background-color: var(--background);
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+  font-family: 'PT Sans', sans-serif;
+  /* cursor: none; */
+}
+
+.header {
+  width: 100%;
+  height: 220px;
+  z-index: 1;
+}
+
+header a {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto; /*ajuste óptico automático para los enlaces */
+  font-style: normal;
+}
+
+header h1 {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 900;
+  font-family: "Heebo", sans-serif;
+  color: var(--azul);
+}
+
+header img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+header nav {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header nav a {
+  color: var(--azul);
+  margin: 0 10px;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+header nav a:hover {
+  color: var(--rosado);
+  font-weight: 600;
+}
+
+.logo {
+  margin: 20px 40px;
+  height: 50px;
+  width: auto;
+} 
+
+h2 {
+  color: var(--azul) !important;
+}
+
+.section-container {
+  --bs-gutter-x: 24px; /*  el margen horizontal entre elementos dentro del contenedor en 24px */
+  --bs-gutter-y: 0; /* el margen vertical entre elementos dentro del contenedor en 0 */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-container .columns {
+  flex: 0 0 auto; /* las columnas no se expandEn ni se contraEN para adaptarse al espacio disponible */
+  width: 50%;
+}
+
+.section-container .columns.image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%; 
+  height: 65vh; 
+}
+
+.section-container .columns.content .content-container {
+  padding: 40px 50px;
+}
+
+.section-container .columns.content .content-container h5 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.section-container .columns.content .content-container p {
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-align: justify;
+  color: var(--oscuro);
+}
+
+.footer {
+  background-color: var(--amarillo);
+  position: relative;
+  height: 180px;
+  width: 100%;
+  align-content: center;
+  margin-top: 100px;
+}
+
+.containerFooter {
+  background-color: var(--amarillo);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+}
+
+.navContainerFooter {
+  margin: 0;
+  display: flex;
+}
+
+.nameFooter {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: var(--azul);
+  font-family: "Heebo";
+  font-weight: 900;
+  text-align: center;
+  font-size: x-large;
+}
+
+.navIcon {
+  margin-bottom: 10px;
+}
+
+.navIcon img {
+  cursor: pointer;
+}
+
+.navFooter {
+  display: flex;
+  margin: 5px 10px 20px 10px;
+  color: var(--azul);
+  font-family: "Heebo";
+  text-decoration: none;
+  font-weight: 600;
+  gap: 40px;
+}
+
+.infoFooter {
+  color: var(--oscuro);
+  font-family: "Heebo";
+  font-weight: 500;
+  text-align: center;
+  font-size: small;
+  background-color: #dbb253;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .image {
+    width:  100%;
+  }
+
+  .section-container {
+    flex-flow: row wrap;
+  }
+
+  .section-container .columns.image {
+    display: block;
+    order: 1; /*las columnas de imagen se mostrarán antes que las columnas de contenido, que tienen un orden de 2.*/
+    width: 100%;
+    height: 350px;
+  }
+
+  .section-container .columns.content {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+
+  .section-container .columns.content .content-container {
+    padding: 20px 35px;
+  }
+
+  .section-container .columns.content .content-container h5 {
+    margin-bottom: 5px;
+  }
+
+  .navContainerFooter {
+    width: 70%;
+  }
+
+  .nameFooter {
+    font-size: 1rem;
+  }
+
+  .navFooter {
+    font-size: 12px;
+  }
+
+
+  .navContainerFooter {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .infoFooter {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    background-color: var(--amarillo); 
+    text-align: center;
+    padding: 10px; 
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: auto;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  .section-container .columns.image {
+    display: block;
+    order: 1;
+    width: 100%;
+    height: 250px;
+  }
+
+  .section-container .columns.content {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+
+  .section-container .columns.content .content-container {
+    padding: 20px 35px;
+  }
+
+  .section-container .columns.content .content-container h5 {
+    margin-bottom: 5px;
+  }
+
+  .image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .containerFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navIcon {
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .navIcon img {
+    margin-right: 10px;
+  }
+
+  .navContainerFooter {
+    margin-bottom: 20px;
+  }
+}
