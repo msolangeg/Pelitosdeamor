@@ -97,72 +97,50 @@ body {
         gap:70px;
         padding-top: 220px;
         width: 80%;
+        height: calc(100vh - 400px);
     }
 
-    .leftContainerAyuda>button{
-        border: none;
-        border-radius: 20px;
-        *background-color: #26547C;
-        color: #f8f8f8;
-        padding: 8px;
-        cursor: pointer;
-        margin-top: 2rem;
-        width: 300px;
-      }
-        .leftContainerAyuda>button:hover{
-          *background-color: #232147;
-          
-        }
 
-
-        .leftContainerAyuda h2,h3,button{
-            animation: pAnim 2s ease 0s 1 normal none;
-            font-family: "Inter", sans-serif;
-        }
-
-        .leftContainerAyuda>p{
-            color:#081721;
-            animation: pAnim 2s ease 0s 1 normal none;
-            font-family: "Inter", sans-serif;
-        }
-
-        @keyframes pAnim {
-            0% {
-            opacity: 0;
-            transform: translateX(-50px);
-            }
+    /* SECCIÓN HELPUS */
     
-            100% {
-            opacity: 1;
-            transform: translateX(0);
-            }
+    .helpUs{
+        display: flex;
+        flex-direction: wrap;
     }
+
+    .containerImages{
+        display:flex;
+        gap:60px;
+        width:100%;
+    }
+        .containerImage{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:40px
+        } 
+
+            .containerImage>img{
+                width: 300px;
+                height: 300px;
+            }
+
+            .containerImage>a{
+                text-decoration: none;
+                color:#26547C;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: x-large;
+            }
+       
     
 
-
-    .containerImage>img{
-        width: 500px;
-        height: 500px;
-        animation: imgAnim 2s ease 0s 1 normal none;
-    }
-        @keyframes imgAnim {
-            0% {
-            opacity: 0;
-            transform: translateX(50px);
-            }
-    
-            100% {
-            opacity: 1;
-            transform: translateX(0);
-            }
-    }
 
    /* -- FOOTER -- */
 
     footer{
         width: 100%;
         height: 170px;
-        margin-top: 40px;
         background-color: #FFD166;
         background-repeat: no-repeat;
         text-align: center;
@@ -203,108 +181,3 @@ body {
         color: #26547C;
      }
 
-
-     
-    /* -- RESPONSIVE MOBILE -- */
-
-    @media (max-width: 545px) {
-
-        header{
-            display: none;
-        }
-
-
-        section{
-            flex-direction: column;
-            padding-top: 50px;
-        }
-
-        section p{
-            font-size: .8rem;  
-            color: #081721;
-          }
-
-        .containerImage{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            
-        }
-
-        .leftContainerAyuda h2,h3,button{
-            opacity: 0;
-            animation: pAnim 2s ease forwards;
-            }
-
-            .leftContainerAyua>p{
-                opacity: 0;
-                animation: pAnim 2s ease forwards;
-                }
-
-            @keyframes pAnim {
-                0% {
-                    opacity: 0;
-                    transform: translateY(20px);
-                }
-            
-                100% {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-
-            .containerImage>img{
-                width: 250px;
-                height: 250px;
-                
-                opacity: 0;
-                animation: imgAnim 2s ease forwards;
-            }
-            @keyframes imgAnim {
-                0% {
-                    opacity: 0;
-                    transform: translateY(20px);
-                }
-            
-                100% {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
- 
-            
-        }
-        
-        /* -- RESPONSIVE TABLET -- */
-
- @media (min-width: 768px) and (max-width: 1024px) {
-
-    header h1 {
-        font-size: 1.5em;
-    }
-    
-    header nav {
-        font-size: 0.8rem;
-    }
-    
-    section{
-        padding-top: 130px;
-        gap:12px;
-        display: flex;
-        margin: auto;
-        align-items: center;
-        
-    }
-
-    .leftContainerAyuda p,h2,h3{
-        font-size: 14px;
-    }
-    
-    
-    .containerImage>img{
-        width: 200px;
-        height: 200px;
-        justify-content: center;
-    }
- }
