@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: #f8f8f8 !important;
+    font-family: "Inter", sans-serif;
+  }
+
+  /* -- ENCABEZADO HEADER -- */
+
+    header{
+        width:100%;
+        top: 0px !important;    
+        position: fixed;
+       
+    }
+
+    header.logoWaveContainer{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        header img{
+            position:absolute;
+            width: 100%;
+            height: 220px;
+            margin-top: 0px;
+            padding: 0px;
+            z-index: 0;
+            object-fit: cover;
+        }
+
+
+        img.logo{
+            margin: 10px 10%;
+            width: 50px;
+            height: 50px;
+            z-index:1;
+        }
+
+        header h1 {
+            position: relative;
+            margin-top: 0;
+            padding-top: 20px;
+            z-index:1;
+            font-size: 2em;
+            color: #26547C;
+            font-family: "Inter", sans-serif;
+            font-weight: 900;
+            text-align: center;
+        }
+      
+    header nav {
+        z-index:1;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        
+    }
+          
+        header nav a {
+            color: #26547C;
+            margin: 0 10px;
+            text-decoration: none; 
+        }
+        
+        header nav a:hover{
+            padding:6px;
+            border-radius: 20px;
+            transition:all .5s ease-in-out;
+            background-color: #06D6A0;
+            color:#FFD166;
+            font-weight: 500;
+        }
+
+  
+
+/* -- SECCIONES MAIN -- */
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;        
+    }
+
+    section{
+        display: flex;
+        gap:70px;
+        padding-top: 220px;
+        width: 80%;
+        height: calc(100vh - 400px);
+    }
+
+
+    /* SECCIÓN HELPUS */
+    
+    .helpUs{
+        display: flex;
+        flex-direction: wrap;
+    }
+
+    .containerImages{
+        display:flex;
+        gap:60px;
+        width:100%;
+    }
+        .containerImage{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:40px
+        } 
+
+            .containerImage>img{
+                width: 300px;
+                height: 300px;
+            }
+
+            .containerImage>a{
+                text-decoration: none;
+                color:#26547C;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: x-large;
+            }
+       
+    
+
+
+   /* -- FOOTER -- */
+
+    footer{
+        width: 100%;
+        height: 170px;
+        background-color: #FFD166;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+     .containerFooter p{
+        margin: 0px !important; 
+        padding: 20px;
+        font-family: "Inter", sans-serif;
+        font-size:x-large;
+        font-weight: 800;
+        color: #26547C;
+        
+     }
+
+     .navConainerFooter{
+        margin: 5px 10px 5px 10px;
+     }
+
+     .navConainerFooter a{
+        margin: 0px !important;
+        padding-bottom: 10px;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #26547C;
+     }
+     .navConainerFooter a:hover{
+        font-weight: 700;
+     }
+
+     .infoFooter p{
+        margin: 0px !important;
+        padding: 10px;
+        font-family: "Inter", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #26547C;
+     }
+
