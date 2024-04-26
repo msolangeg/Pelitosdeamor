@@ -1,70 +1,52 @@
-/* testimonials */
-form {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-}
+/* Le damos formato a la parte superior de la pagina */
 
 body {
-
     height: 100%;
-    margin: 0;
+    padding-top: 200px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5; /* Color de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen de fondo */
-    background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza la página */
-    
-}
+    background-color: #f5f5f5; 
+    }
+
+/* Se le da formato a la parte superior de la pagina */
+
 header{
-    width:100%;
+    width: 100%;
     top: 0px !important;    
     position: fixed;
-   
-}
+   }
 
 header.logoWaveContainer{
     width: 100%;
     height: auto;
     margin: 0px;
     padding: 0px;
-}
-
-    header img{
-        position:absolute;
-        width: 100%;
-        height: 220px;
-        margin-top: 0px;
-        padding: 0px;
-        z-index: 0;
-        object-fit: cover;
     }
 
-
-    img.logo{
-        margin: 10px 10%;
-        width: 50px;
-        height: 50px;
-        z-index:1;
+header img{
+    position:absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    padding: 0px;
+    z-index: 0;
+    object-fit: cover;
     }
 
-    header h1 {
-        position: relative;
-        margin-top: 0;
-        padding-top: 20px;
-        z-index:1;
-        font-size: 2em;
-        color: #26547C;
-        font-family: "Inter", sans-serif;
-        font-weight: 900;
-        text-align: center;
+header h1 {
+    position: relative;
+    margin-top: 10;
+    padding-top: 20px;
+    z-index:1;
+    font-size: 2em;
+    color: #26547C;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    text-align: center;
     }
-  
+
 header nav {
     z-index:1;
     position: relative;
@@ -73,87 +55,119 @@ header nav {
     padding: 0;
     text-align: center;
     font-family: "Inter", sans-serif;
-    
-}
-      
-    header nav a {
-        color: #26547C;
-        margin: 0 10px;
-        text-decoration: none; 
-    }
-    
-    header nav a:hover{
-        padding:6px;
-        border-radius: 20px;
-        transition:all .5s ease-in-out;
-        background-color: #06D6A0;
-        color:#FFD166;
-        font-weight: 500;
     }
 
-.contenedor-principal {
-    display: grid;
-    text-align: center; /* Centra el contenido del contenedor */
-}
+header nav a {
+    color: #26547C;
+    margin: 0 10px;
+    text-decoration: none; 
+    }
 
-h1 {
-    margin-bottom: 90px; /* Espacio después del título */
-    color: #080808; /* Color de la letra */
-}
+/* Se pone en verde el boton Inicio */
+
+header nav a:hover{
+    padding:6px;
+    border-radius: 20px;
+    transition:all .5s ease-in-out;
+    background-color: #06D6A0;
+    color:#FFD166;
+    font-weight: 500;
+    }
+
+/* Se le da forma al logo de la pagina*/
+
+img.logo{
+    margin: 10px 10%;
+    width: 50px;
+    height: 50px;
+    z-index:1;
+    }
+
+/* A partir de aca vamos a darle formato a los testimonios */
 
 .contenedor-testimonios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
-    gap: 50px; /* Espacio entre testimonios */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+    
 }
 
-.imagen-testimonio {
-    max-width: 100%; /* Ancho máximo para la imagen */
-    border-radius: 10px; /* Bordes redondeados para la imagen */
+/* Estos son los colores de las tarjetas */
+
+.pink{
+    background-image: url(Imagenes/bg-pink.svg);
+    background-size: cover;
+    color: #f8f8f8;
 }
 
-.texto-testimonio {
-    margin: 10px 0; /* Márgenes en la parte superior e inferior del texto */
+.blue{
+    background-image: url(Imagenes/bg-blue.svg);
+    background-size: cover;
+    color: #f8f8f8;
 }
+
+.yellow{
+    background-image: url(Imagenes/bg-yellow.svg);
+    background-size: cover;
+    color: rgb(7, 7, 7);
+}
+
+.aqua{
+    background-image: url(Imagenes/bg-aqua.svg);
+    background-size: cover;
+    color: rgb(7, 7, 7);
+}
+
+/* Le damos formato a la imagen */
+.imagen {
+    max-width: 500px;
+    text-align: center;
+    float: none; 
+    margin-right: 10px; 
+    border-radius: 50%;
+    margin: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 280px; 
+    height: 400px; 
+    margin-bottom: 20px;
+}
+
+.texto {
+    display: grid;
+    margin: 20px; 
+    padding: 10px; 
+    height: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+/* Realizamos un contorno a cada imagen */
 
 .contenedor {
     display: flex;
     padding: 90px;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 20px; /* Espacio entre elementos */
-}
-
-.imagen {
-    max-width: 320px;
-    text-align: center;
-    float: none; /* Flotar a la izquierda */
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-    border-radius: 10px;
-    height: auto;
-    margin: 0;
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
-
-.texto {
-    display: grid;
-    margin: 20px; /* Márgenes predeterminados del párrafo */
-    padding: 10px; /* Espaciado dentro del párrafo */
-    background-color: #f8f3f3; /* Color de fondo para el texto */
-    border-radius: 5px;
-    height: 40%;
-    margin: 0 auto;
+    margin-bottom: 60px; 
+    width: 400px;
+    padding: 30px;
+    gap: 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
+    font-family: 'Bitter';
+    border-radius: 50px;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 
+    5px 5px 9px rgba(94,104,121,0.3);
 }
 
-header a {
-    text-align: center;
-    margin: 20px;
-}
+/* Le damos color al pie de pagina */
+
 footer{
     width: 100%;
     height: 170px;
@@ -162,36 +176,18 @@ footer{
     background-repeat: no-repeat;
     text-align: center;
 }
- .containerFooter p{
-    margin: 0px !important; 
-    padding: 20px;
-    font-family: "Inter", sans-serif;
-    font-size:x-large;
-    font-weight: 800;
-    color: #26547C;
-    
- }
 
- .navConainerFooter{
-    margin: 5px 10px 5px 10px;
- }
+/* Márgenes en la parte superior e inferior del texto */
 
- .navConainerFooter a{
-    margin: 0px !important;
-    padding-bottom: 10px;
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #26547C;
- }
  .navConainerFooter a:hover{
     font-weight: 700;
  }
 
+/* Márgenes en la parte superior e inferior del texto */
+
  .infoFooter p{
     margin: 0px !important;
-    padding: 10px;
+    padding: 20px;
     font-family: "Inter", sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
