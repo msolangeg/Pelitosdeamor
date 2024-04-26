@@ -101,38 +101,7 @@ body {
     }
 
 
-    /* SECCIÓN HELPUS */
-    
-    .helpUs{
-        display: flex;
-        flex-direction: wrap;
-    }
 
-    .containerImages{
-        display:flex;
-        gap:60px;
-        width:100%;
-    }
-        .containerImage{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap:40px
-        } 
-
-            .containerImage>img{
-                width: 300px;
-                height: 300px;
-            }
-
-            .containerImage>a{
-                text-decoration: none;
-                color:#26547C;
-                font-family: "Inter", sans-serif;
-                font-weight: 600;
-                font-size: x-large;
-            }
-       
     
 
 

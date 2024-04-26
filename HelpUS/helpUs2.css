@@ -82,6 +82,57 @@ body {
         }
 
   
+           /* SECCIÓN 4 BLOBS*/
+    
+    .helpUs{
+        display: flex;
+        flex-direction: wrap;
+    }
+
+    .containerImages{
+        display:flex;
+        gap:60px;
+        width:100%;
+        padding-top: 130px;
+    }
+        .containerImage{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:40px
+        } 
+
+        
+        .containerImage>a{
+            text-decoration: none;
+            color:#26547C;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: x-large;
+        }
+        
+        .imageHover>img{
+            width: 300px;
+            height: 300px;
+        }
+            .imageHover>img:hover{
+                animation: myHover 2s ease 0s 1 normal forwards;
+            }
+           
+            @keyframes myHover {
+                0% {
+                    transform: scale(1);
+                }
+            
+                50% {
+                    transform: scale(1.1);
+                }
+            
+                100% {
+                    transform: scale(1);
+                }
+            }
+       
 
 /* -- SECCIONES MAIN -- */
     
@@ -156,6 +207,10 @@ body {
             transform: translateX(0);
             }
     }
+
+
+
+
 
    /* -- FOOTER -- */
 
