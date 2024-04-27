@@ -94,6 +94,7 @@ body {
         gap:60px;
         width:100%;
         padding-top: 130px;
+        animation: pAnim 2s ease 0s 1 normal none;
     }
         .containerImage{
             display: flex;
@@ -150,23 +151,32 @@ body {
         width: 80%;
     }
 
-    .leftContainerAyuda>button{
-        border: none;
-        border-radius: 20px;
-        *background-color: #26547C;
-        color: #f8f8f8;
-        padding: 8px;
+    .buttonLink{ 
+        border-radius: 16px;
+        color: #f5f5f5;
+        padding: 8px 32px;
+        text-decoration: none;
         cursor: pointer;
-        margin-top: 2rem;
-        width: 300px;
-      }
-        .leftContainerAyuda>button:hover{
-          *background-color: #232147;
-          
-        }
+        margin-top: 16px !important;
+        font-size: 12px;
+        animation: pAnim 2s ease 0s 1 normal none;
+    }
 
+    .blue{
+        background-color: #26547C;
+    }
+    .pink{
+        background-color: #ef476f;
+    }
+    .yellow{
+        background-color: #ffd166;
+    }
+    .green{
+        background-color: #06D6A0;
+    }
+    
 
-        .leftContainerAyuda h2,h3,button{
+        .leftContainerAyuda h2,h3{
             animation: pAnim 2s ease 0s 1 normal none;
             font-family: "Inter", sans-serif;
         }
@@ -208,6 +218,7 @@ body {
             }
     }
 
+   
 
 
 
@@ -261,7 +272,7 @@ body {
 
     /* -- RESPONSIVE MOBILE -- */
 
-    @media (max-width: 545px) {
+    @media (max-width: 768px) {
 
         header{
             display: none;
@@ -337,6 +348,10 @@ body {
         /* -- RESPONSIVE TABLET -- */
 
  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .helpUs{
+        display: none
+    }
 
     header h1 {
         font-size: 1.5em;

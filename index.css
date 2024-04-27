@@ -56,7 +56,7 @@ body {
         }
       
     header nav {
-        z-index:1;
+        z-index:10;
         position: relative;
         list-style: none;
         margin: 0;

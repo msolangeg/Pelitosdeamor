@@ -1,4 +1,6 @@
 
+
+
 // Desplazamiento suave al hacer click en cada sección
 
 document.addEventListener('DOMContentLoaded', function() {
