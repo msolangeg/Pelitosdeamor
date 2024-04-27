@@ -101,9 +101,38 @@ body {
     }
 
 
+    /* ----------LANDING--------- */
+    main{
+        font-family: "Inter", sans-serif;
+    }
 
+    .nameRefu{
+        font-size: 4rem;
+        font-weight: 900;
+        color: #FFD166;
+    }
+
+    .containerImage{
+        width: 40%;
+    }
+
+    .imagenBack{
+        object-fit: cover;
+        position: absolute;
+        right: 0%;
+        height: 100%;
+       z-index: -10;
+    }
+    .leftContainerAyuda{
+        padding-right: 100px;
+        text-align: left;
+        line-height: 3rem;
+        font-weight: 500;
+        color: #26547C;
+    }
     
-
+    
+/* ---------------------------------- */
 
    /* -- FOOTER -- */
 
@@ -150,3 +179,90 @@ body {
         color: #26547C;
      }
 
+/* ---------------RESPONSIVE-------- */
+
+@media (max-width: 545px) {
+
+    header{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        width: 100;
+    }
+
+        main>img{
+            display: none;
+        }
+
+    
+    .aboutUs{
+        display: flex;
+        flex-direction: column;
+        width: 100;
+        padding-top:60px;
+        animation: anim 2s ease forwards;
+    }
+
+    @keyframes anim {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .leftContainerAyuda{
+        line-height: 1.2rem;
+        font-size: 12px;
+        padding-right: 0px;
+    }
+
+    .nameRefu{
+        font-size: 1.5rem;
+    }
+
+    .containerImage{
+        width: 100%;
+        background-color: #EF476F;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerImage>img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .imagenBack{
+        object-fit: cover;
+        position: absolute;
+        right: 0%;
+        height: 100%;
+       z-index: -10;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        animation: anim 2s ease forwards;
+    }
+    @keyframes anim {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
