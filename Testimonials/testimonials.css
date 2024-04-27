@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
 /* Le damos formato a la parte superior de la pagina */
 
 body {
@@ -8,11 +11,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f5f5f5; 
+    margin: 0px !important;
     }
 
 /* Se le da formato a la parte superior de la pagina */
 
-header{
+/* header{
     width: 100%;
     top: 0px !important;    
     position: fixed;
@@ -61,35 +65,36 @@ header nav a {
     color: #26547C;
     margin: 0 10px;
     text-decoration: none; 
-    }
+    } */
 
 /* Se pone en verde el boton Inicio */
 
-header nav a:hover{
+/* header nav a:hover{
     padding:6px;
     border-radius: 20px;
     transition:all .5s ease-in-out;
     background-color: #06D6A0;
     color:#FFD166;
     font-weight: 500;
-    }
+    } */
 
 /* Se le da forma al logo de la pagina*/
 
-img.logo{
+/* img.logo{
     margin: 10px 10%;
     width: 50px;
     height: 50px;
     z-index:1;
-    }
+    } */
 
 /* A partir de aca vamos a darle formato a los testimonios */
 
 .contenedor-testimonios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    display: flex;
+    flex-wrap: wrap;
+    /* *grid-template-columns: repeat(3, 1fr);  */
     gap: 50px; 
-    
+    justify-content: center;
 }
 
 /* Estos son los colores de las tarjetas */
@@ -97,13 +102,13 @@ img.logo{
 .pink{
     background-image: url(Imagenes/bg-pink.svg);
     background-size: cover;
-    color: #f8f8f8;
+    color: #f5f5f5;
 }
 
 .blue{
     background-image: url(Imagenes/bg-blue.svg);
     background-size: cover;
-    color: #f8f8f8;
+    color: #f5f5f5;
 }
 
 .yellow{
@@ -143,6 +148,7 @@ img.logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Inter", sans-serif;
     }
 
 /* Realizamos un contorno a cada imagen */
@@ -168,31 +174,34 @@ img.logo{
 
 /* Le damos color al pie de pagina */
 
-footer{
+/* footer{
     width: 100%;
     height: 170px;
     margin-top: 40px;
     background-color: #FFD166;
     background-repeat: no-repeat;
     text-align: center;
-}
+} */
 
 /* Márgenes en la parte superior e inferior del texto */
 
- .navConainerFooter a:hover{
+ /* .navConainerFooter a:hover{
     font-weight: 700;
- }
+ } */
 
 /* Márgenes en la parte superior e inferior del texto */
 
- .infoFooter p{
+ /* .infoFooter p{
     margin: 0px !important;
     padding: 20px;
     font-family: "Inter", sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
     color: #26547C;
- }
+ } */
+
+
+
  /* -- ENCABEZADO HEADER -- */
 
  header{
@@ -310,3 +319,44 @@ header nav {
         color: #26547C;
      }
 
+/* ------------RESPONSIVE MOBILE-------------- */
+
+@media (max-width: 545px) {
+    header{
+        display: none;
+    }
+
+    body{
+        padding-top: 70px;
+    }
+
+   section{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+
+   } 
+.contenedor-testimonios{
+    gap:16px;
+    padding-bottom:30px
+}
+   
+
+   .contenedor{
+    width: 250px;
+    height: 250px;
+    margin:0px;
+    padding:20px;
+   }
+
+   .contenedor>img{
+    width: 100px;
+    object-fit: cover;
+   }
+   .contenedor>p{
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+   }
+}
