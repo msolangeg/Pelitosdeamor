@@ -82,7 +82,7 @@ body {
         }
 
   
-           /* SECCIÓN 4 BLOBS*/
+/*------------- SECCIÓN 4 BLOBS----------------*/
     
     .helpUs{
         display: flex;
@@ -173,8 +173,8 @@ body {
 
         .leftContainerAyuda>p{
             color:#081721;
-            animation: pAnim 2s ease 0s 1 normal none;
             font-family: "Inter", sans-serif;
+            animation: pAnim 2s ease 0s 1 normal none;
         }
 
         @keyframes pAnim {
@@ -267,7 +267,11 @@ body {
             display: none;
         }
 
+        .helpUs{
+            display: none;
+        }
 
+        
         section{
             flex-direction: column;
             padding-top: 50px;
