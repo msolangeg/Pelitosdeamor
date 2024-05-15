@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
-/* Le damos formato a la parte superior de la pagina */
+/* reset css*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-body {
-    height: 100%;
-    padding-top: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5; 
-    margin: 0px !important;
-    }
+a,
+li {
+    font-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
 
-/* Se le da formato a la parte superior de la pagina */
-
+.body {
+    background: #f8f8f8;
+} 
 /* header{
     width: 100%;
     top: 0px !important;    
@@ -88,17 +90,44 @@ header nav a {
     } */
 
 /* A partir de aca vamos a darle formato a los testimonios */
+.containerGral {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    font-family: "Inter", sans-serif;
+}
 
+.sectionTestimonials{
+    width: 80%;
+}
+
+.textSection{
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    padding: 15px;
+    gap: 20px;
+}
+
+.textSection h1{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #26547C;
+}
+
+.textSection p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
 .contenedor-testimonios {
     display: flex;
     flex-wrap: wrap;
-    /* *grid-template-columns: repeat(3, 1fr);  */
-    gap: 50px; 
     justify-content: center;
+    gap: 50px; 
 }
 
 /* Estos son los colores de las tarjetas */
-
 .pink{
     background-image: url(Imagenes/bg-pink.svg);
     background-size: cover;
@@ -124,83 +153,34 @@ header nav a {
 }
 
 /* Le damos formato a la imagen */
-.imagen {
-    max-width: 500px;
-    text-align: center;
-    float: none; 
-    margin-right: 10px; 
+.imagen { 
     border-radius: 50%;
-    margin: 0;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 280px; 
-    height: 400px; 
-    margin-bottom: 20px;
+    width: 160px;
 }
 
-.texto {
-    display: grid;
-    margin: 20px; 
-    padding: 10px; 
-    height: 40%;
-    margin: 0 auto;
+.contenedor .texto { 
+    height: 60%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-family: "Inter", sans-serif;
-    }
-
-/* Realizamos un contorno a cada imagen */
+    font-size: 0.9rem;
+    margin-top: 20px;
+    width: 80%;
+}
 
 .contenedor {
     display: flex;
-    padding: 90px;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 60px; 
-    width: 400px;
-    padding: 30px;
-    gap: 15px;
-    display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: 'Bitter';
-    border-radius: 50px;
+    margin-bottom: 60px; 
+    height: 400px;
+    width: 320px;
+    padding: 5px 2px;
+    border-radius: 30px;
     box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 
     5px 5px 9px rgba(94,104,121,0.3);
 }
-
-/* Le damos color al pie de pagina */
-
-/* footer{
-    width: 100%;
-    height: 170px;
-    margin-top: 40px;
-    background-color: #FFD166;
-    background-repeat: no-repeat;
-    text-align: center;
-} */
-
-/* Márgenes en la parte superior e inferior del texto */
-
- /* .navConainerFooter a:hover{
-    font-weight: 700;
- } */
-
-/* Márgenes en la parte superior e inferior del texto */
-
- /* .infoFooter p{
-    margin: 0px !important;
-    padding: 20px;
-    font-family: "Inter", sans-serif;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #26547C;
- } */
-
-
 
  /* -- ENCABEZADO HEADER -- */
 
@@ -330,33 +310,21 @@ header nav {
         padding-top: 70px;
     }
 
-   section{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    font-size: small;
+    .textSection h1{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .textSection p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    .contenedor .texto { 
+        font-size: 0.9rem;
+    }
+    .contenedor-testimonios {
+        gap: 0px; 
+    }
 
-   } 
-.contenedor-testimonios{
-    gap:16px;
-    padding-bottom:30px
 }
-   
 
-   .contenedor{
-    width: 250px;
-    height: 250px;
-    margin:0px;
-    padding:20px;
-   }
-
-   .contenedor>img{
-    width: 100px;
-    object-fit: cover;
-   }
-   .contenedor>p{
-    width: 100%;
-    text-align: center;
-    padding: 0%;
-   }
-}
