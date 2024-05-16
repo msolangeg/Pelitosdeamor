@@ -23,75 +23,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// HEADER
+// HEADER-------------------------------------------
 
-// let header = `
-// <div class="logoWaveContainer">
-// <img
-//   class="logo"
-//   src="../HelpUS/logoBlue.png"
-//   alt="logo pelitos de amor"
-// />
-// <img src="../HelpUS/wave2.svg" alt="wave navbar" />
-// <h1>PELITOS DE AMOR</h1>
-// </div>
-
-// <nav class="navContainer">
-// <a href="../index.html">Inicio</a>
-// <a href="../index.html#contact">Contacto</a>
-// <a href="../AboutUs/aboutUs.html">Nosotros</a>
-// <a href="../Adoptions/adoptions.html">Adopciones</a>
-// <a href="../Testimonials/testimonial.html">Peludos felices</a>
-// <a href="../HelpUS/helpUs.html">Ayudanos</a>
-// </nav>`
-
-// document.querySelector("header").innerHTML= header
-
-
-
-// FOOTER
-
-
-// let footer = 
-// `
-// <div class="containerFooter">
-//   <p class="nameFooter">- PELITOS DE AMOR -</p>
-
-//   <div class="navIcon">
-//     <img src="../HelpUS/icon/logoInsta.svg" />
-//     <img src="../HelpUS/icon/logoFace.svg" />
-//     <img src="../HelpUS/icon/logoWhats.svg" />
-//   </div>
-
-//   <div class="navConainerFooter">
-//     <a class="navFooter" href="../index.html">Inicio</a>
-//     <a class="navFooter" href="../index.html#contact">Contacto</a>
-//     <a class="navFooter" href="../AboutUs/aboutUs.html">Nosotros</a>
-//     <a class="navFooter" href="../Adoptions/adoptions.html">Adopciones</a>
-//     <a class="navFooter" href="../Testimonials/testimonial.html">Peludos felices</a>
-//     <a class="navFooter" href="../HelpUS/helpUs.html">Ayudanos</a>
-//   </div>
-// </div>
-// <div class="infoFooter">
-//   <p>Sitio realizado por 5codificar para CaC</p>
-// </div>`
-
-// document.querySelector("footer").innerHTML= footer
-
-
-
-
-
-
-// ------------HEADER prueba---------------------
 let header = `
 <div class="logoWaveContainer">
 <img
   class="logo"
-  src="./logoBlue.png"
+  src="../HelpUS/logoBlue.png"
   alt="logo pelitos de amor"
 />
-<img src="./wave2.svg" alt="wave navbar" />
+<img src="../HelpUS/wave2.svg" alt="wave navbar" />
 <h1>PELITOS DE AMOR</h1>
 </div>
 
@@ -108,16 +49,18 @@ document.querySelector("header").innerHTML= header
 
 
 
-//------------------ FOOTER prueba------------------
+//FOOTER---------------------------------
+
+
 let footer = 
 `
 <div class="containerFooter">
   <p class="nameFooter">- PELITOS DE AMOR -</p>
 
   <div class="navIcon">
-    <img src="./logoInsta.svg" />
-    <img src="./logoFace.svg" />
-    <img src="./logoWhats.svg" />
+    <img src="../HelpUS/icon/logoInsta.svg" />
+    <img src="../HelpUS/icon/logoFace.svg" />
+    <img src="../HelpUS/icon/logoWhats.svg" />
   </div>
 
   <div class="navConainerFooter">
@@ -134,5 +77,62 @@ let footer =
 </div>`
 
 document.querySelector("footer").innerHTML= footer
+
+
+
+
+
+
+// // ------------HEADER prueba---------------------
+// let header = `
+// <div class="logoWaveContainer">
+// <img
+//   class="logo"
+//   src="./logoBlue.png"
+//   alt="logo pelitos de amor"
+// />
+// <img src="./wave2.svg" alt="wave navbar" />
+// <h1>PELITOS DE AMOR</h1>
+// </div>
+
+// <nav class="navContainer">
+// <a href="../index.html">Inicio</a>
+// <a href="../index.html#contact">Contacto</a>
+// <a href="../AboutUs/aboutUs.html">Nosotros</a>
+// <a href="../Adoptions/adoptions.html">Adopciones</a>
+// <a href="../Testimonials/testimonial.html">Peludos felices</a>
+// <a href="../HelpUS/helpUs.html">Ayudanos</a>
+// </nav>`
+
+// document.querySelector("header").innerHTML= header
+
+
+
+// //------------------ FOOTER prueba------------------
+// let footer = 
+// `
+// <div class="containerFooter">
+//   <p class="nameFooter">- PELITOS DE AMOR -</p>
+
+//   <div class="navIcon">
+//     <img src="./logoInsta.svg" />
+//     <img src="./logoFace.svg" />
+//     <img src="./logoWhats.svg" />
+//   </div>
+
+//   <div class="navConainerFooter">
+//     <a class="navFooter" href="../index.html">Inicio</a>
+//     <a class="navFooter" href="../index.html#contact">Contacto</a>
+//     <a class="navFooter" href="../AboutUs/aboutUs.html">Nosotros</a>
+//     <a class="navFooter" href="../Adoptions/adoptions.html">Adopciones</a>
+//     <a class="navFooter" href="../Testimonials/testimonial.html">Peludos felices</a>
+//     <a class="navFooter" href="../HelpUS/helpUs.html">Ayudanos</a>
+//   </div>
+// </div>
+// <div class="infoFooter">
+//   <p>Sitio realizado por 5codificar para CaC</p>
+// </div>`
+
+// document.querySelector("footer").innerHTML= footer
 
 
