@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>¿Cómo ayudarnos?</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
 
-  <body>
-    <header class="headerContainer">
-      <!-- <div class="logoWaveContainer">
-        <img
-          class="logo"
-          src="../HelpUS/logoBlue.png"
-          alt="logo pelitos de amor"
-        />
-        <img src="../HelpUS/wave2.svg" alt="wave navbar" />
-        <h1>PELITOS DE AMOR</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="logoBlue.png" />
+  <link rel="stylesheet" href="./index.css" />
+  <title>PELITOS DE AMOR</title>
+</head>
+
+<body>
+  <header class="headerContainer">
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="container-text">
+        <h2 class="titulo">PELITOS DE AMOR</h2>
+        <P class="text">
+          Somos un refugio comprometido con el rescate y la adopción de
+          mascotas abandonadas. <br>
+          Nos dedicamos a brindar un hogar temporal a perros y gatos en
+          situación de calle, proporcionándoles cuidado, amor y atención
+          veterinaria. Nuestra misión es encontrar familias amorosas para cada
+          uno de nuestros peludos, asegurando que encuentren un hogar
+          permanente donde puedan vivir felices y seguros.<br /><strong>
+            Únete a nosotros y sé parte del cambio, salvando vidas y llenando
+            tu hogar de amor con un peludito.</strong>
+        </P>
       </div>
+      <div class="container-img">
+        <img class="img-mascotas" src="./blob.png" alt="imagen de mascotas">
+      </div>
+      <!-- <img class="wave" src="./VectorWave.svg" alt="wave"> -->
+    </div>
+   
+    <!-- Formulario de contacto -->
+    <div class="contact-container" id="contact">
+      <div class="form-center">
+        <div class="form-container">
+          <div class="form-text">
+            <h2>Contáctanos</h2>
+            <p class="contact-description">
+              ¿Tienes alguna consulta o necesitas ayuda? <br>
+              Completa el formulario y estaremos encantados en ayudarte.
+            </p>
+            <img src="./img-contact.png" width="500" class="form-image" alt="Imagen de perro y gato">
+          </div>
+          <form class="contact-form" method="post" action="#">
+            <div class="form-element">
+              <input type="text" name="name" placeholder="Nombre" required>
+            </div>
+            <div class="form-element">
+              <input type="email" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-element">
+              <input type="tel" name="contact-number" placeholder="Número de contacto" required>
+            </div>
+            <div class="form-element">
+              <textarea name="message" placeholder="Mensaje" required></textarea>
+            </div>
+            <div class="form-element">
+              <select name="reason" required>
+                <option value="" disabled selected>Selecciona un motivo</option>
+                <option value="adopt">Adopción</option>
+                <option value="volunteer">Voluntariado</option>
+                <option value="donation">Donación</option>
+                <option value="other">Otro</option>
+              </select>
+            </div>
 
-      <nav class="navContainer"> -->
-      <!-- <a href="">Inicio</a> -->
-      <!-- <a href="#aboutUs">Nosotros</a>
-        <a href="#adoptions">Adopciones</a>
-        <a href="#contact">Contacto</a>
-        <a href="#testimonials">Peludos felices</a>
-        <a href="#helpUs">Ayudanos</a>
-      </nav> -->
-    </header>
-
-    <main class="sectionContainer">
-      <section class="section aboutUs" id="aboutUs">
-        <div class="leftContainerAyuda">
-          <h2 class="nameRefu">PELITOS DE AMOR</h2>
-          
-          <p>
-            Somos un refugio comprometido con el rescate y la adopción de
-            mascotas abandonadas. <br />
-            Nos dedicamos a brindar un hogar temporal a perros y gatos en
-            situación de calle, proporcionándoles cuidado, amor y atención
-            veterinaria. Nuestra misión es encontrar familias amorosas para cada
-            uno de nuestros peludos, asegurando que encuentren un hogar
-            permanente donde puedan vivir felices y seguros.<br /><strong
-              >Únete a nosotros y sé parte del cambio, salvando vidas y llenando
-              tu hogar de amor con un peludito.</strong
-            >
-          </p>
-        </div>
-        <div class="containerImage">
-          <img
-            class="imagen"
-            src="./dog_PNG50348.png"
-            height="700"
-            alt="Imagen relacionada a bienvenida al refugio"
-          />
-        </div>
-      </section>
-
-      <img class="imagenBack" src="./prueba4.svg" alt="Imagen fondo" />
-
-      <section class="section contact" id="contact">
-        <div class="leftContainerAyuda">
-          <h2>Contacto</h2>
-        </div>
-        <div class="containerImage">
-          <img
-            src="https://epichotelsanluis.com/wp-content/uploads/2022/11/placeholder.png"
-            *src="blobamarillo.svg"
-            height="200"
-            alt="Imagen relacionada a las donaciones"
-          />
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <!-- <div class="containerFooter">
-        <p class="nameFooter">- PELITOS DE AMOR -</p>
-
-        <div class="navIcon">
-          <img src="../HelpUS/icon/logoInsta.svg" />
-          <img src="../HelpUS/icon/logoFace.svg" />
-          <img src="../HelpUS/icon/logoWhats.svg" />
-        </div>
-
-        <div class="navConainerFooter">
-          <a class="navFooter" href="../AboutUs/aboutUs.html">Nosotros</a>
-          <a class="navFooter" href="../Adoptions/adoptions.html">Adopciones</a>
-          <a class="navFooter" href="#contact">Contacto</a>
-          <a class="navFooter" href="../Testimonials/testimonial.html">Peludos felices</a>
-          <a class="navFooter" href="../HelpUS/helpUs.html">Ayudanos</a>
+            <div class="form-element">
+              <label>
+                <input type="checkbox" name="subscribe" value="subscribe"> Recibir novedades por correo electrónico
+              </label>
+            </div>
+            <div class="form-element">
+              <label>
+                <input type="radio" name="contact-method" value="phone"> Contactar por número de contacto
+              </label>
+            </div>
+            <div class="form-element">
+              <label>
+                <input type="radio" name="contact-method" value="email" checked> Contactar por correo electrónico
+              </label>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+          </form>
         </div>
       </div>
-      <div class="infoFooter">
-        <p>Sitio realizado por 5codificar para CaC</p>
-      </div> -->
-    </footer>
-    <script src="./index.js"></script>
-  </body>
+    </div>
+
+    <!-- Acá quise poner un mapa simulando la ubicación del refugio, lo comenté porque no me convence como queda, si les gusta lo ponen  -->
+    <!-- <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209517.10657865208!2d-56.38738431530927!3d-34.86364433950018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f819489292bf1%3A0x53251e398ef47df5!2sRefugio%20de%20Mascotas!5e0!3m2!1ses-419!2sar!4v1715837559590!5m2!1ses-419!2sar" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div> -->
+  </main>
+
+
+
+  <footer class="footer">
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
 </html>
