@@ -13,6 +13,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box !important;
+  gap:32px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body {
@@ -94,12 +100,15 @@ header nav a:hover {
 h2 {
   color: var(--azul) !important;
 }
-
+.contact-container{
+  width: 100%;
+}
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 80%;
 }
 
 .wave {
@@ -159,7 +168,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   width: 70%;
-  padding: 20px;
+  padding: 40px;
   color: var(--azul);
   background-color: var(--amarillo);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -274,11 +283,12 @@ h2 {
   border: 1px solid var(--azul);
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .map-container iframe {
   width: 100%;
-  height: 450px;
+  height: 300px;
   border-radius: 18px;
 }
 
@@ -347,6 +357,9 @@ h2 {
 /* ------------Responsive-------------------- */
 @media only screen and (max-width: 767px) {
 
+  header{
+    display: none;
+  }
   .logo {
     display: none;
   }
@@ -370,6 +383,9 @@ h2 {
     box-sizing: border-box;
     margin: 0 auto;
   }
+  .contact-container{
+    padding: 10px;
+  }
 
   .titulo {
     margin-top: 50px;
@@ -379,7 +395,11 @@ h2 {
     padding-bottom: 10px;
   }
 
-  
+  .form-center{
+    padding: 10px;
+    margin: 10px;
+  }
+
   .form-text{
     width: 80%;
     margin: 0 auto;
@@ -400,9 +420,11 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    *margin: 0 auto;
+    padding: 10px;
+    margin: 10px;
   }
 
 }
@@ -444,7 +466,15 @@ h2 {
     padding-bottom: 10px;
   }
 
+ .contact-container{
+    padding: 10px;
+  }
 
+  .form-center{
+    padding: 10px;
+    margin: 10px;
+
+  }
   .contact-description{
     padding-bottom: 10px;
   }
@@ -467,7 +497,9 @@ h2 {
     align-items: center;
     justify-content: space-between;
     max-width: 800px;
-    margin: 0 auto;
+    *margin: 0 auto;
+    padding: 10px;
+    margin: 10px;
   }
 
   .footer {

@@ -86,13 +86,14 @@ body {
     
     .helpUs{
         display: flex;
-        flex-direction: wrap;
+        width: auto;
     }
 
+    
     .containerImages{
         display:flex;
         gap:60px;
-        width:100%;
+        width:80%;
         padding-top: 130px;
         animation: pAnim 2s ease 0s 1 normal none;
     }
@@ -146,7 +147,7 @@ body {
 
     section{
         display: flex;
-        gap:70px;
+        *gap:70px;
         padding-top: 220px;
         width: 80%;
     }
