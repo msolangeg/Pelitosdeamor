@@ -96,7 +96,9 @@ header nav a:hover {
   color: var(--amarillo);
   font-weight: 500;
 }
-
+.abrirMenu, .cerrarMenu{
+  display: none;
+}
 /* ---------------------------------------------------- */
 h2 {
   color: var(--azul) !important;
@@ -346,7 +348,6 @@ h2 {
 
 .infoFooter p {
   margin: 0 !important;
-  padding: 10px;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
@@ -356,19 +357,67 @@ h2 {
 
 
 /* ------------Responsive-------------------- */
-@media only screen and (max-width: 767px) {
+
+@media (max-width: 768px) {
+
+  header img, h1{
+      display: none;
+  }
+
 
   header{
     display: none;
   }
   .logo {
-    display: none;
+      display: block;
   }
 
-  .wave{
-    display: none;
+.abrirMenu , .cerrarMenu{
+  display: block;
+  border: 0;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.abrirMenu{
+  margin: 20px 5%; 
+  color: #FFD166;
+  font-size: 2rem;
+}
+.cerrarMenu{
+  color: #26547C;
+  font-size: 2.5rem;
+}
+.headerContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+  .navContainer {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #FFD166;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+      height: 100vh;
+      gap: 1rem;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 
+.navContainer.visible {
+  opacity: 1;
+  visibility: visible;
+}
+}
+@media only screen and (max-width: 767px) {
   .image {
     width: 100%;
   }
@@ -432,17 +481,6 @@ h2 {
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .header {
-    padding: auto;
-  }
-
-  .logo {
-    width: auto;
-  }
-
-  .wave{
-    display: none;
-  }
 
   .image {
     width: 100%;
@@ -503,9 +541,7 @@ h2 {
     margin: 10px;
   }
 
-  .footer {
-    padding: 20px 10px;
-  }
+
 
   .containerFooter {
     flex-direction: column;

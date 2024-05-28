@@ -102,6 +102,11 @@ header nav a:hover {
     font-weight: 500;
 }
 
+.abrirMenu,
+.cerrarMenu {
+    display: none;
+}
+
 .containerGral {
     width: 100%;
     display: flex;
@@ -147,7 +152,7 @@ header nav a:hover {
 .principalText h1 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color:#26547C;
+    color: #26547C;
 }
 
 .principalText p {
@@ -205,7 +210,7 @@ header nav a:hover {
 .textPeluditos h2 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color:#ef476f;
+    color: #ef476f;
 }
 
 .textPeluditos p {
@@ -276,17 +281,19 @@ header nav a:hover {
     width: 150px;
 }
 
-.additionalInfo  {
+.additionalInfo {
     display: flex;
     align-items: center;
     color: rgb(7, 7, 7);
 }
-.additionalInfo > div {
+
+.additionalInfo>div {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
 }
+
 .additionalInfo p {
     display: flex;
     align-items: center;
@@ -523,7 +530,6 @@ footer {
 
 .infoFooter p {
     margin: 0px !important;
-    padding: 10px;
     font-family: "Inter", sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
@@ -532,22 +538,73 @@ footer {
 
 /* RESPONSIVE */
 
-@media (max-width: 768px){
-    header{
+@media (max-width: 768px) {
+
+    header img, h1{
         display: none;
     }
-    .containerGral{
-        padding-top:0px;
+
+
+    .logo {
+        display: block;
     }
+
+.abrirMenu , .cerrarMenu{
+    display: block;
+    border: 0;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.abrirMenu{
+    margin: 20px 5%; 
+    color: #FFD166;
+    font-size: 2rem;
+}
+.cerrarMenu{
+    color: #26547C;
+    font-size: 2.5rem;
+}
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+    .navContainer {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #FFD166;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        height: 100vh;
+        gap: 1rem;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+.navContainer.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
     #adopcion {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         margin-top: 70px;
     }
-    .imgSectionAdoption{
+
+    .imgSectionAdoption {
         width: 100%;
     }
+
     .principalText {
         gap: 15px;
         width: 100%;
@@ -577,21 +634,20 @@ footer {
     }
 }
 
-@media (max-width: 480px){
-    .containerGral{
-        padding-top:0px;
-    }
-    .imgSectionAdoption{
+@media (max-width: 480px) {
+    .imgSectionAdoption {
         text-align: center;
     }
+
     .img1 {
         width: 250px;
     }
+
     .principalText h1 {
         font-size: 1rem;
         margin-bottom: 10px;
     }
-    
+
     .principalText p {
         font-size: 0.8rem;
         margin-bottom: 10px;
@@ -604,9 +660,11 @@ footer {
     .textPeluditos p {
         font-size: 0.8rem;
     }
+
     .additionalInfo p {
         font-size: 0.8rem;
     }
+
     .img2 {
         width: 250px;
     }
@@ -615,12 +673,12 @@ footer {
         font-size: 1rem;
         margin-bottom: 10px;
     }
-    
+
     .textRequisitos p {
         font-size: 0.8rem;
         margin-bottom: 10px;
     }
-    
+
     .textRequisitos ul li {
         font-size: 0.8rem;
     }
@@ -629,15 +687,17 @@ footer {
         font-size: 1rem;
         margin-bottom: 10px;
     }
-    
+
     .textFormulario p {
         font-size: 0.8rem;
         margin-bottom: 10px;
     }
-.textFormulario .formButton{
-    font-size: 1rem;
-    width: 150px;
-}
+
+    .textFormulario .formButton {
+        font-size: 1rem;
+        width: 150px;
+    }
+
     .imgForm img {
         width: 250px;
     }

@@ -32,22 +32,39 @@ let header = `
   src="../HelpUS/logoBlue.png"
   alt="logo pelitos de amor"
 />
+
+
 <img src="../HelpUS/wave2.svg" alt="wave navbar" />
 <h1>PELITOS DE AMOR</h1>
+
+
 </div>
 
-<nav class="navContainer">
+<nav class="navContainer" id="nav">
+
+<button class="cerrarMenu" id="cerrar"><i class="bi bi-x"></i></button>
 <a href="../index.html">Inicio</a>
 <a href="../index.html#contact">Contacto</a>
 <a href="../AboutUs/aboutUs.html">Nosotros</a>
 <a href="../Adoptions/adoptions.html">Adopciones</a>
 <a href="../Testimonials/testimonial.html">Peludos felices</a>
 <a href="../HelpUS/helpUs.html">Ayudanos</a>
-</nav>`
+</nav>
+<button id="abrir" class="abrirMenu"><i class="bi bi-list"></i></button>`
 
 document.querySelector("header").innerHTML= header
 
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
 
+abrir.addEventListener("click", () => {
+  nav.classList.add("visible");
+});
+
+cerrar.addEventListener("click", () => {
+  nav.classList.remove("visible");
+});
 
 //FOOTER---------------------------------
 

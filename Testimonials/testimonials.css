@@ -18,78 +18,11 @@ li {
 .body {
     background: #f8f8f8;
 } 
-/* header{
-    width: 100%;
-    top: 0px !important;    
-    position: fixed;
-   }
 
-header.logoWaveContainer{
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    padding: 0px;
+    .abrirMenu,
+    .cerrarMenu {
+        display: none;
     }
-
-header img{
-    position:absolute;
-    width: 100%;
-    height: auto;
-    margin-top: 0px;
-    padding: 0px;
-    z-index: 0;
-    object-fit: cover;
-    }
-
-header h1 {
-    position: relative;
-    margin-top: 10;
-    padding-top: 20px;
-    z-index:1;
-    font-size: 2em;
-    color: #26547C;
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    text-align: center;
-    }
-
-header nav {
-    z-index:1;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    }
-
-header nav a {
-    color: #26547C;
-    margin: 0 10px;
-    text-decoration: none; 
-    } */
-
-/* Se pone en verde el boton Inicio */
-
-/* header nav a:hover{
-    padding:6px;
-    border-radius: 20px;
-    transition:all .5s ease-in-out;
-    background-color: #06D6A0;
-    color:#FFD166;
-    font-weight: 500;
-    } */
-
-/* Se le da forma al logo de la pagina*/
-
-/* img.logo{
-    margin: 10px 10%;
-    width: 50px;
-    height: 50px;
-    z-index:1;
-    } */
-
-/* A partir de aca vamos a darle formato a los testimonios */
 .containerGral {
     width: 100%;
     display: flex;
@@ -293,7 +226,7 @@ header nav {
 
      .infoFooter p{
         margin: 0px !important;
-        padding: 10px;
+
         font-family: "Inter", sans-serif;
         font-size: 0.8rem;
         font-weight: 500;
@@ -301,6 +234,63 @@ header nav {
      }
 
 /* ------------RESPONSIVE MOBILE-------------- */
+
+@media (max-width: 768px) {
+
+    header img, h1{
+        display: none;
+    }
+
+
+    .logo {
+        display: block;
+    }
+
+.abrirMenu , .cerrarMenu{
+    display: block;
+    border: 0;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.abrirMenu{
+    margin: 20px 5%; 
+    color: #FFD166;
+    font-size: 2rem;
+}
+.cerrarMenu{
+    color: #26547C;
+    font-size: 2.5rem;
+}
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+    .navContainer {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #FFD166;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        height: 100vh;
+        gap: 1rem;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+.navContainer.visible {
+    opacity: 1;
+    visibility: visible;
+}
+}
 
 @media (max-width: 545px) {
     header{

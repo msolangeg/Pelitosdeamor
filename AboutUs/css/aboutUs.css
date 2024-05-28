@@ -354,7 +354,6 @@ h2 {
 
 .infoFooter p{
   margin: 0px !important;
-  padding: 10px;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
@@ -482,9 +481,6 @@ h2 {
     margin-bottom: 20px;
   }
 
-  .footer {
-    padding: 20px 10px;
-  }
 
   .containerFooter {
     flex-direction: column;

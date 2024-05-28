@@ -80,7 +80,11 @@ body {
             color:#FFD166;
             font-weight: 500;
         }
-
+        
+        .abrirMenu,
+        .cerrarMenu {
+            display: none;
+        }
   
 /*------------- SECCIÓN 4 BLOBS----------------*/
     
@@ -273,10 +277,61 @@ body {
 
     /* -- RESPONSIVE MOBILE -- */
 
-    @media (max-width: 768px) {
 
-        header{
-            display: none;
+        @media (max-width: 768px) {
+
+            header img, h1{
+                display: none;
+            }
+        
+        
+            .logo {
+                display: block;
+            }
+        
+        .abrirMenu , .cerrarMenu{
+            display: block;
+            border: 0;
+            font-weight: bold;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        
+        .abrirMenu{
+            margin: 20px 5%; 
+            color: #FFD166;
+            font-size: 2rem;
+        }
+        .cerrarMenu{
+            color: #26547C;
+            font-size: 2.5rem;
+        }
+        .headerContainer{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        
+            .navContainer {
+                opacity: 0;
+                visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: #FFD166;
+                padding: 2rem;
+                box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+                height: 100vh;
+                gap: 1rem;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+            }
+        
+        .navContainer.visible {
+            opacity: 1;
+            visibility: visible;
         }
 
         .helpUs{
@@ -292,7 +347,7 @@ body {
         section p{
             font-size: .8rem;  
             color: #081721;
-          }
+}
 
         .containerImage{
             display: flex;
@@ -381,4 +436,4 @@ body {
         height: 200px;
         justify-content: center;
     }
- }
+}
