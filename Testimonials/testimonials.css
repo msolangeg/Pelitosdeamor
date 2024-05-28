@@ -220,6 +220,7 @@ header.logoWaveContainer{
         position: relative;
         margin-top: 0;
         padding-top: 20px;
+        margin-bottom: 21px;
         z-index:1;
         font-size: 2em;
         color: #26547C;
