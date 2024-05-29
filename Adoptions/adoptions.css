@@ -25,6 +25,9 @@ li {
 .body {
     background: #f8f8f8;
 }
+.containerGral{
+    padding-top:130px;
+}
 
 /* -- ENCABEZADO HEADER -- */
 
@@ -533,6 +536,9 @@ footer {
     header{
         display: none;
     }
+    .containerGral{
+        padding-top:0px;
+    }
     #adopcion {
         display: flex;
         flex-direction: column-reverse;
@@ -572,6 +578,9 @@ footer {
 }
 
 @media (max-width: 480px){
+    .containerGral{
+        padding-top:0px;
+    }
     .imgSectionAdoption{
         text-align: center;
     }

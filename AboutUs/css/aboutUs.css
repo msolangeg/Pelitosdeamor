@@ -197,7 +197,21 @@ h2 {
 .section-container .columns {
   flex: 0 0 auto; /* las columnas no se expandEn ni se contraEN para adaptarse al espacio disponible */
   width: 50%;
-}
+  animation: sAnim 2s ease 0s 1 normal none;
+        }
+
+        @keyframes sAnim {
+            0% {
+            opacity: 0;
+            transform: translateX(50px);
+            }
+    
+            100% {
+            opacity: 1;
+            transform: translateX(0);
+            }
+    }
+
 
 .section-container .columns.image {
   background-position: center;
@@ -205,7 +219,21 @@ h2 {
   background-size: contain;
   width: 50%; 
   height: 65vh; 
-}
+  animation: img1 2s ease 0s 1 normal none;
+        }
+
+        @keyframes img1 {
+            0% {
+            opacity: 0;
+            transform: translateX(-50px);
+            }
+    
+            100% {
+            opacity: 1;
+            transform: translateX(0);
+            }
+    }
+
 
 .section-container .columns.content .content-container {
   padding: 40px 50px;
