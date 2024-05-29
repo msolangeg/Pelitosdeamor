@@ -1,27 +1,25 @@
 // Desplazamiento suave al hacer click en cada sección
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll('main section a[href^="#"]');
-  
-  links.forEach(link => {
-    link.addEventListener('click', function(e) {
+
+  links.forEach((link) => {
+    link.addEventListener("click", function (e) {
       e.preventDefault();
-      
-      const targetId = this.getAttribute('href').substring(1);
+
+      const targetId = this.getAttribute("href").substring(1);
       const targetElement = document.getElementById(targetId);
-      
+
       if (targetElement) {
         const offsetTop = targetElement.offsetTop;
         window.scrollTo({
           top: offsetTop,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
       }
     });
   });
 });
-
-
 
 // HEADER-------------------------------------------
 
@@ -50,9 +48,9 @@ let header = `
 <a href="../Testimonials/testimonial.html">Peludos felices</a>
 <a href="../HelpUS/helpUs.html">Ayudanos</a>
 </nav>
-<button id="abrir" class="abrirMenu"><i class="bi bi-list"></i></button>`
+<button id="abrir" class="abrirMenu"><i class="bi bi-list"></i></button>`;
 
-document.querySelector("header").innerHTML= header
+document.querySelector("header").innerHTML = header;
 
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
@@ -68,9 +66,7 @@ cerrar.addEventListener("click", () => {
 
 //FOOTER---------------------------------
 
-
-let footer = 
-`
+let footer = `
 <div class="containerFooter">
   <p class="nameFooter">- PELITOS DE AMOR -</p>
 
@@ -91,65 +87,65 @@ let footer =
 </div>
 <div class="infoFooter">
   <p>Sitio realizado por 5codificar para CaC</p>
-</div>`
+</div>`;
 
-document.querySelector("footer").innerHTML= footer
-
-
+document.querySelector("footer").innerHTML = footer;
 
 
 
+//-----Validación formulario----
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+  const contactNumberInput = document.getElementById("contactNumber");
 
-// // ------------HEADER prueba---------------------
-// let header = `
-// <div class="logoWaveContainer">
-// <img
-//   class="logo"
-//   src="./logoBlue.png"
-//   alt="logo pelitos de amor"
-// />
-// <img src="./wave2.svg" alt="wave navbar" />
-// <h1>PELITOS DE AMOR</h1>
-// </div>
+  form.addEventListener("submit", function (event) {
+    const name = form.elements["name"].value;
+    const email = form.elements["email"].value;
+    const contactNumber = form.elements["contact-number"].value;
+    const message = form.elements["message"].value;
+    const reason = form.elements["reason"].value;
 
-// <nav class="navContainer">
-// <a href="../index.html">Inicio</a>
-// <a href="../index.html#contact">Contacto</a>
-// <a href="../AboutUs/aboutUs.html">Nosotros</a>
-// <a href="../Adoptions/adoptions.html">Adopciones</a>
-// <a href="../Testimonials/testimonial.html">Peludos felices</a>
-// <a href="../HelpUS/helpUs.html">Ayudanos</a>
-// </nav>`
+    let errorMessage = "";
 
-// document.querySelector("header").innerHTML= header
+    if (name.trim() === "") {
+      errorMessage += "Por favor, ingrese su nombre.\n";
+    }
 
+    if (email.trim() === "") {
+      errorMessage += "Por favor, ingrese su correo electrónico.\n";
+    } else if (!validateEmail(email)) {
+      errorMessage += "Por favor, ingrese un correo electrónico válido.\n";
+    }
 
+    if (contactNumber.trim() === "") {
+      errorMessage += "Por favor, ingrese su número de contacto.\n";
+    } else if (!/^\d+$/.test(contactNumber)) {
+      errorMessage +=
+        "Por favor, ingrese solo números en el campo de número de contacto.\n";
+    }
 
-// //------------------ FOOTER prueba------------------
-// let footer = 
-// `
-// <div class="containerFooter">
-//   <p class="nameFooter">- PELITOS DE AMOR -</p>
+    if (message.trim() === "") {
+      errorMessage += "Por favor, ingrese su mensaje.\n";
+    }
 
-//   <div class="navIcon">
-//     <img src="./logoInsta.svg" />
-//     <img src="./logoFace.svg" />
-//     <img src="./logoWhats.svg" />
-//   </div>
+    if (reason === "") {
+      errorMessage += "Por favor, seleccione un motivo.\n";
+    }
 
-//   <div class="navConainerFooter">
-//     <a class="navFooter" href="../index.html">Inicio</a>
-//     <a class="navFooter" href="../index.html#contact">Contacto</a>
-//     <a class="navFooter" href="../AboutUs/aboutUs.html">Nosotros</a>
-//     <a class="navFooter" href="../Adoptions/adoptions.html">Adopciones</a>
-//     <a class="navFooter" href="../Testimonials/testimonial.html">Peludos felices</a>
-//     <a class="navFooter" href="../HelpUS/helpUs.html">Ayudanos</a>
-//   </div>
-// </div>
-// <div class="infoFooter">
-//   <p>Sitio realizado por 5codificar para CaC</p>
-// </div>`
+    if (errorMessage !== "") {
+      alert(errorMessage);
+      event.preventDefault();
+    }
+  });
 
-// document.querySelector("footer").innerHTML= footer
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  }
+
+  contactNumberInput.addEventListener("input", function (event) {
+    this.value = this.value.replace(/\D/g, "");
+  });
+});
 
 

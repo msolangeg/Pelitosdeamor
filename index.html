@@ -33,7 +33,6 @@
       <div class="container-img">
         <img class="img-mascotas" src="./blob.png" alt="imagen de mascotas">
       </div>
-      <!-- <img class="wave" src="./VectorWave.svg" alt="wave"> -->
     </div>
    
     <!-- Formulario de contacto -->
@@ -53,7 +52,7 @@
               </iframe>
             </div>
           </div>
-          <form class="contact-form" method="post" action="#">
+          <form id="contactForm" class="contact-form" method="post" action="#">
             <div class="form-element">
               <input type="text" name="name" placeholder="Nombre" required>
             </div>
@@ -61,7 +60,7 @@
               <input type="email" name="email" placeholder="Correo electrónico" required>
             </div>
             <div class="form-element">
-              <input type="tel" name="contact-number" placeholder="Número de contacto" required>
+              <input type="tel" id="contactNumber" name="contact-number" placeholder="Número de contacto" required>
             </div>
             <div class="form-element">
               <textarea name="message" placeholder="Mensaje" required></textarea>
@@ -96,15 +95,10 @@
         </div>
       </div>
     </div>
-
-    <!-- Acá quise poner un mapa simulando la ubicación del refugio, lo comenté porque no me convence como queda, si les gusta lo ponen  -->
   </main>
-
-
 
   <footer class="footer">
   </footer>
-
   <script src="./index.js"></script>
 </body>
 </html>
