@@ -548,6 +548,10 @@ footer {
     .logo {
         display: block;
     }
+    .containerGral {
+        margin-top: 0;
+        padding-top: 0;
+     }
 
 .abrirMenu , .cerrarMenu{
     display: block;
@@ -635,6 +639,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .containerGral {
+        margin-top: 0;
+        padding-top: 0;
+     }
+
     .imgSectionAdoption {
         text-align: center;
     }

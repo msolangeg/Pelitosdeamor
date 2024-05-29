@@ -43,7 +43,7 @@ li {
     gap: 20px;
 }
 
-.textSection h1{
+.textSection h2{
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #26547C;
@@ -245,6 +245,9 @@ header nav {
     .logo {
         display: block;
     }
+    /* .containerGral {
+       margin-top: 0;
+    } */
 
 .abrirMenu , .cerrarMenu{
     display: block;
@@ -300,6 +303,10 @@ header nav {
     body{
         padding-top: 70px;
     }
+
+    .containerGral {
+        margin-top: 0;
+     }
 
     .textSection h1{
         font-size: 1rem;

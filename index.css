@@ -435,6 +435,12 @@ h2 {
     box-sizing: border-box;
     margin: 0 auto;
   }
+
+  .container-text p {
+    font-size: 14px;
+    line-height: 2;
+  }
+
   .contact-container{
     padding: 10px;
   }
@@ -499,6 +505,11 @@ h2 {
     padding: 0 20px;
     box-sizing: border-box;
     margin: 0 auto;
+  }
+
+  .container-text p {
+    font-size: 14px;
+    line-height: 2;
   }
 
   .form-text{
