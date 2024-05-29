@@ -119,19 +119,8 @@ h2 {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
-  width: 80%;
-}
-
-#founders {
   padding-top: 220px;
-}
-
-#mission {
-  padding-left: 150px;
-}
-#volunteers{
-  padding-left: 150px;
+  width: 80%;
 }
 
 .section-container .columns {
@@ -379,72 +368,3 @@ footer {
 }
 
 /* -------------- */
-
-/* -------------- Estilos de Menú Hamburguesa -------------- */
-
-.abrirMenu,
-.cerrarMenu {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  header img,
-  h1 {
-    display: none;
-  }
-
-  header {
-    display: none;
-  }
-
-  .logo {
-    display: block;
-  }
-
-  .abrirMenu,
-  .cerrarMenu {
-    display: block;
-    border: 0;
-    font-weight: bold;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-  .abrirMenu {
-    margin: 20px 5%;
-    color: #ffd166;
-    font-size: 2rem;
-  }
-
-  .cerrarMenu {
-    color: #26547c;
-    font-size: 2.5rem;
-  }
-
-  .headerContainer {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .navContainer {
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #ffd166;
-    padding: 2rem;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    height: 100vh;
-    gap: 1rem;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-
-  .navContainer.visible {
-    opacity: 1;
-    visibility: visible;
-  }
-}
